@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2A2A2A; /* Temno sivo ozadje */
+    color: #E5E5E5; /* Svetlo siva barva za besedilo */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Polprosojen ozadje za header */
+    color: #F2D34B;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #F2D34B;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    text-align: center;
+    background-image: url('images/nea.jpeg'); /* Slika kot ozadje samo za "O nas" */
+    background-size: cover; /* Prekrivanje celotnega ozadja */
+    background-position: center;
+    background-attachment: fixed; /* Slika ostane fiksirana med pomikanjem strani */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.person {
+    background-color: rgba(0, 0, 0, 0.6); /* Polprosojen ozadje za posamezno osebo */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Dodajanje gladke animacije za transformacijo */
+}
+
+.person:hover {
+    transform: scale(1.2); /* Ko je miška nad sliko, jo povečaj za 20% */
+}
+
+.person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Dodajanje animacije za sliko */
+}
+
+.person img:hover {
+    transform: scale(1.1); /* Ko je miška nad sliko, jo povečaj za 10% */
+}
+
+footer {
+    background-color: #444;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 10px;
+}
